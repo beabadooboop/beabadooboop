@@ -45,6 +45,12 @@ the-race.com##[class*="ad-spot"]
 the-race.com##[class*="latest-stories"]
 the-race.com##[class="gh-footer-signup"]
 
+! Feeders
+feederseries.net##.wp-block-list
+feederseries.net##.wp-block-jetpack-donations.jp-donations-1
+feederseries.net##.nav-links
+feederseries.net##.widget-area
+
 ! Reddit
 reddit.com##shreddit-comment:has([icon-name="block"])
 reddit.com##body:has(a[href="/r/formula1/submit/"])
@@ -73,3 +79,6 @@ tumblr.com##[data-cell-id*="timelineObject:title"]
 
 ! Tumblr Keyword
 tumblr.com##.FtjPK:not(:is(.k31gt,.KSDLH):has-text(/\b(?:lando|landito|ln|ln4|ln04|lnfour|norris|landonorris|carlando|norrix|norrussell|norbon|norelli|norinelli|jontent|cisca|magui)\b/i))
+
+! Tumblr Media Only
+! tumblr.com##.FtjPK:not(:has([aria-label="Image"]),:has([aria-label*="Video"]))
