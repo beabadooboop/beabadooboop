@@ -76,9 +76,12 @@ tumblr.com##.FZkjV:has([class="hF8Wr"])
 ! Tumblr Ads and Suggestions
 tumblr.com##[data-cell-id*="carousel"]
 tumblr.com##[data-cell-id*="timelineObject:title"]
+tumblr.com##.njwip
+tumblr.com##.erLM8
 
 ! Tumblr Keyword
 tumblr.com##.FtjPK:not(:is(.k31gt,.KSDLH):has-text(/\b(?:lando|landito|ln|ln4|ln04|lnfour|norris|landonorris|carlando|norrix|norrussell|norbon|norelli|norinelli|jontent|cisca|magui)\b/i))
 
 ! Tumblr Media Only
 ! tumblr.com##.FtjPK:not(:has([aria-label="Image"]),:has([aria-label*="Video"]))
+
