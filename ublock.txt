@@ -60,16 +60,8 @@ reddit.com##[id*="trending-searches"]
 ! Twitter Replies
 x.com##[aria-label="Timeline: Conversation"] [data-testid="cellInnerDiv"]:not(:first-child)
 
-! Tumblr filtered Posts
-tumblr.com##.FtjPK:has([class="W0ros"])
+! Tumblr
+tumblr.com##div
 
-! Tumblr Ads and Suggestions
-tumblr.com##[data-cell-id*="carousel"]
-tumblr.com##[data-cell-id*="timelineObject:title"]
-
-! Tumblr Sidebar
-tumblr.com##.FZkjV:has([class="hF8Wr"])
-
-! Tumblr Post Pages
-tumblr.com##[data-timeline-id*="peepr-more-posts"]
-tumblr.com##[class="VNh6c"]
+! Daily Mail
+dailymail.com##div
