@@ -84,4 +84,4 @@ tumblr.com##.FtjPK:not(:is(.k31gt,.KSDLH):has-text(/\b(?:lando|landito|ln|ln1|ln
 tumblr.com##.FtjPK:not(:has([aria-label="Image"]),:has([aria-label*="Video"]))
 
 ! Daily Mail
-! dailymail.com##div
+dailymail.com##div
