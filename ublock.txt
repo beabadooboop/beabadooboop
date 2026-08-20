@@ -59,6 +59,7 @@ reddit.com##[id*="trending-searches"]
 
 ! Twitter Replies
 x.com##[aria-label="Timeline: Conversation"] [data-testid="cellInnerDiv"]:not(:first-child)
+x.com##article:has-text(/⁸¹/i)
 
 ! Tumblr
 tumblr.com##div
