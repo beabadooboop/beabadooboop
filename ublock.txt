@@ -60,28 +60,8 @@ reddit.com##[id*="trending-searches"]
 ! Twitter Replies
 x.com##[aria-label="Timeline: Conversation"] [data-testid="cellInnerDiv"]:not(:first-child)
 
-! Tumblr Post Pages
-tumblr.com##[data-timeline-id*="peepr-more-posts"]
-tumblr.com##[class="VNh6c"]
-
-! Tumblr filtered Posts
-tumblr.com##.FtjPK:has([class="W0ros"])
-
-! Tumblr Polls
-tumblr.com##.FtjPK:has([data-attribution="poll-block"])
-
-! Tumblr Sidebar
-tumblr.com##.FZkjV:has([class="hF8Wr"])
-
-! Tumblr Ads and Suggestions
-tumblr.com##[data-cell-id*="carousel"]
-tumblr.com##[data-cell-id*="timelineObject:title"]
-
-! Tumblr Keyword
-tumblr.com##.FtjPK:not(:is(.k31gt,.KSDLH):has-text(/\b(?:lando|landito|ln|ln1|ln4|ln04|lnfour|norris|carlando|norrix|nortrell|norrussell|norbon|jon|jontent)\b/i))
-
-! Tumblr Media Only
-tumblr.com##.FtjPK:not(:has([aria-label="Image"]),:has([aria-label*="Video"]))
+! Tumblr
+tumblr.com##div
 
 ! Daily Mail
 dailymail.com##div
