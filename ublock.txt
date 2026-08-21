@@ -65,4 +65,4 @@ x.com##article:has-text(/⁸¹/i)
 tumblr.com##div
 
 ! Daily Mail
-dailymail.com##div
+! dailymail.com##div
