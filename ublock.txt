@@ -53,16 +53,30 @@ feederseries.net##.widget-area
 
 ! Reddit
 reddit.com##shreddit-comment:has([icon-name="block"])
-reddit.com##body:has(a[href="/r/formula1/submit/"])
-reddit.com##body:has(a[href="/r/F1Discussions/submit/"])
 reddit.com##[id*="trending-searches"]
 
-! Twitter Replies
+! Twitter Hide Replies
 x.com##[aria-label="Timeline: Conversation"] [data-testid="cellInnerDiv"]:not(:first-child)
+
+! Twitter Hide OP Fans
 x.com##article:has-text(/⁸¹|OP81/i)
 
-! Tumblr
-tumblr.com##div
+! Tumblr filtered Posts & Polls
+tumblr.com##.FtjPK:has([class="W0ros"])
+tumblr.com##.FtjPK:has([data-attribution="poll-block"])
 
-! Daily Mailz
-dailymail.com##div
+! Tumblr Ads and Suggestions
+tumblr.com##[data-cell-id*="carousel"]
+tumblr.com##[data-cell-id*="timelineObject:title"]
+tumblr.com##.njwip
+tumblr.com##.erLM8
+
+! Tumblr Post Pages
+tumblr.com##[data-timeline-id*="peepr-more-posts"]
+tumblr.com##[class="VNh6c"]
+
+! Tumblr Sidebar
+tumblr.com##.FZkjV:has([class="hF8Wr"])
+
+! Tumblr Keyword
+tumblr.com##.FtjPK:not(:is(.k31gt,.KSDLH):has-text(/\b(?:lando|landito|ln|ln1|ln4|lnfour|carlando|norrix|norrussell|norbon|nortrell|dando|jon|jontent|cisca)\b/i))
