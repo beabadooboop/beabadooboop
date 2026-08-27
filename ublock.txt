@@ -55,9 +55,6 @@ feederseries.net##.widget-area
 reddit.com##shreddit-comment:has([icon-name="block"])
 reddit.com##[id*="trending-searches"]
 
-! Twitter Hide Replies
-x.com##[aria-label="Timeline: Conversation"] [data-testid="cellInnerDiv"]:not(:first-child)
-
 ! Tumblr filtered Posts & Polls
 tumblr.com##.FtjPK:has([class="W0ros"])
 tumblr.com##.FtjPK:has([data-attribution="poll-block"])
