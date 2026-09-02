@@ -71,6 +71,3 @@ tumblr.com##[class="VNh6c"]
 
 ! Tumblr Sidebar
 tumblr.com##.FZkjV:has([class="hF8Wr"])
-
-! Tumblr Keyword
-tumblr.com##.FtjPK:not(:is(.k31gt,.KSDLH):has-text(/\b(?:lando|landito|ln|ln1|ln4|lnfour|carlando|norrix|norrussell|norbon|nortrell|dando|jon|jontent|cisca)\b/i))
