@@ -37,6 +37,7 @@ autosport.com,motorsport.com##[class*="ms-hapb"]
 autosport.com,motorsport.com##[class*="ms-apb"]
 autosport.com,motorsport.com##[data-msnt-label="Advertisement"]
 autosport.com,motorsport.com##[data-widget*="recommendations"]
+autosport.com,motorsport.com##[class*="embed-item"]
 
 ! The Race
 the-race.com##[class*="comment"]
@@ -54,20 +55,25 @@ feederseries.net##.widget-area
 ! Reddit
 reddit.com##shreddit-comment:has([icon-name="block"])
 reddit.com##[id*="trending-searches"]
+reddit.com##body:has(a:is([href="/r/formula1/submit/"],[href="/r/F1Discussions/submit/"],[href="/r/McLarenFormula1/submit/"],[href="/r/INDYCAR/submit/"]))
 
-! Tumblr filtered Posts & Polls
+! Tumblr
+!tumblr.com##.FtjPK:not(:has([aria-label="Image"]),:has([aria-label*="Video"]))
+!tumblr.com##article:not(:has([data-testid="tag-link"][href*="lando"], [data-testid="tag-link"][href*="norrix"]))
+tumblr.com##.FtjPK:not(:is(.k31gt,.KSDLH):has-text(/\b(?:lando|landito|ln|ln4|ln04|lnfour|carlando|norrix|norrussell|norbon|jontent)\b/i))
 tumblr.com##.FtjPK:has([class="W0ros"])
 tumblr.com##.FtjPK:has([data-attribution="poll-block"])
-
-! Tumblr Ads and Suggestions
+tumblr.com##.FZkjV:has([class="hF8Wr"])
 tumblr.com##[data-cell-id*="carousel"]
 tumblr.com##[data-cell-id*="timelineObject:title"]
-tumblr.com##.njwip
-tumblr.com##.erLM8
-
-! Tumblr Post Pages
 tumblr.com##[data-timeline-id*="peepr-more-posts"]
 tumblr.com##[class="VNh6c"]
+tumblr.com##.njwip
+tumblr.com##.erLM8
+tumblr.com##.B5krg
 
-! Tumblr Sidebar
-tumblr.com##.FZkjV:has([class="hF8Wr"])
+! Twitter
+x.com##[aria-label="Timeline: Conversation"] [data-testid="cellInnerDiv"]:not(:first-child)
+
+! DM
+dailymail.com##div
