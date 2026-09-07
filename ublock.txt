@@ -60,7 +60,7 @@ reddit.com##body:has(a:is([href="/r/formula1/submit/"],[href="/r/F1Discussions/s
 ! Tumblr
 !tumblr.com##.FtjPK:not(:has([aria-label="Image"]),:has([aria-label*="Video"]))
 !tumblr.com##article:not(:has([data-testid="tag-link"][href*="lando"], [data-testid="tag-link"][href*="norrix"]))
-tumblr.com##.FtjPK:not(:is(.k31gt,.KSDLH):has-text(/\b(?:lando|landito|ln|ln4|ln04|lnfour|carlando|norrix|norrussell|norbon|jontent)\b/i))
+tumblr.com##.FtjPK:not(:is(.k31gt,.KSDLH):has-text(/\b(?:lando|landito|ln|ln1|ln4|carlando|norrix|norrussell|norbon|jon|jontent)\b/i))
 tumblr.com##.FtjPK:has([class="W0ros"])
 tumblr.com##.FtjPK:has([data-attribution="poll-block"])
 tumblr.com##.FZkjV:has([class="hF8Wr"])
@@ -74,6 +74,7 @@ tumblr.com##.B5krg
 
 ! Twitter
 x.com##[aria-label="Timeline: Conversation"] [data-testid="cellInnerDiv"]:not(:first-child)
+x.com##article:has-text(/(⁸¹|OP81)/i)
 
 ! DM
 dailymail.com##div
