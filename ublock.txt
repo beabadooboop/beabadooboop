@@ -1,1 +1,81 @@
+! Racer
+racer.com##[class*="mui-23a8w5"]
+racer.com##[class*="mui-pozj21"]
+racer.com##[class*="mui-31ay2x"]
+racer.com##[class*="mui-1use7mj"]
+racer.com##[class*="mui-s8w5if"]
+racer.com##[class*="mui-3a49va"]
+racer.com##[class*="mui-r9be5k"]
+racer.com##[class*="mui-utg45p"]
+racer.com##[class*="mui-bvqshl"]
+racer.com##[class*="mui-84xbvh"]
+racer.com##[class*="mui-b53am9"]
+racer.com##[class*="mui-1by5bs2"]
+racer.com##[class*="mui-1upilqn"]
+racer.com##[class*="mui-yn35v5"]
+racer.com##[class*="mui-qbdd6d"]
+racer.com##[class*="mui-htoeji"]
 
+! S365
+sportscar365.com##[src*="advertise"]
+sportscar365.com##[src*="embed"]
+sportscar365.com##[id*="author"]
+sportscar365.com##[id*="more-post"]
+sportscar365.com##[id*="side-wrap"]
+sportscar365.com##[id*="foot-wrap"]
+
+! Autosport + Motorsport
+autosport.com,motorsport.com##[class*="comment"]
+autosport.com,motorsport.com##[class*="live-timing"]
+autosport.com,motorsport.com##[class*="drivers-rating"]
+autosport.com,motorsport.com##[class*="inarticle-widgets"]
+autosport.com,motorsport.com##[class*="prev-next"]
+autosport.com,motorsport.com##[class*="related"]
+autosport.com,motorsport.com##[class*="video"]
+autosport.com,motorsport.com##[class*="footer"]
+autosport.com,motorsport.com##[class*="ms-hapb"]
+autosport.com,motorsport.com##[class*="ms-apb"]
+autosport.com,motorsport.com##[data-msnt-label="Advertisement"]
+autosport.com,motorsport.com##[data-widget*="recommendations"]
+autosport.com,motorsport.com##[class*="embed-item"]
+
+! The Race
+the-race.com##[class*="comment"]
+the-race.com##[class="gh-header is-highlight gh-outer category-listing"]
+the-race.com##[class*="ad-spot"]
+the-race.com##[class*="latest-stories"]
+the-race.com##[class="gh-footer-signup"]
+
+! Feeders
+feederseries.net##.wp-block-list
+feederseries.net##.wp-block-jetpack-donations.jp-donations-1
+feederseries.net##.nav-links
+feederseries.net##.widget-area
+
+! Reddit
+reddit.com##shreddit-comment:has([icon-name="block"])
+reddit.com##[id*="trending-searches"]
+
+! Twitter
+x.com##[aria-label="Timeline: Conversation"] [data-testid="cellInnerDiv"]:not(:first-child)
+x.com##article:has-text(/(⁸¹|OP81)/i)
+
+! Tumblr
+tumblr.com##.FtjPK:not(:has([aria-label="Image"]),:has([aria-label*="Video"]))
+tumblr.com##.FtjPK:has([class="W0ros"])
+tumblr.com##.FtjPK:has([data-attribution="poll-block"])
+tumblr.com##.FZkjV:has([class="hF8Wr"])
+tumblr.com##[data-cell-id*="carousel"]
+tumblr.com##[data-cell-id*="timelineObject:title"]
+tumblr.com##[data-timeline-id*="peepr-more-posts"]
+tumblr.com##.J1Yq3:has([aria-label="Suggested communities"])
+tumblr.com##[class="VNh6c"]
+tumblr.com##.njwip
+tumblr.com##.erLM8
+tumblr.com##.B5krg
+
+! Keyword Ublock Compatible
+tumblr.com##.FtjPK:not(:is(.k31gt,.KSDLH):has-text(/\b(?:lando|landito|ln|ln1|ln4|lnfour|carlando|norrix|norrussell|norbon|jon|jontent)\b/i))
+
+! DM
+! dailymail.com##div
