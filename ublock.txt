@@ -54,6 +54,7 @@ feederseries.net##.widget-area
 
 ! Reddit
 reddit.com##shreddit-comment:has([icon-name="block"])
+reddit.com##shreddit-comment[collapsed]
 reddit.com##[id*="trending-searches"]
 
 ! Twitter
@@ -78,4 +79,5 @@ tumblr.com##.B5krg
 tumblr.com##.FtjPK:not(:is(.k31gt,.KSDLH):has-text(/\b(?:lando|landito|ln|ln1|ln4|lnfour|carlando|norrix|norrussell|norbon|jon|jontent)\b/i))
 
 ! DM
-! dailymail.com##div
+dailymail.com##div
+
