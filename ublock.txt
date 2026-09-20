@@ -53,10 +53,12 @@ feederseries.net##.nav-links
 feederseries.net##.widget-area
 
 ! Reddit
-reddit.com##body:has(custom-feed-header[name="f1"]) article:not(:has(shreddit-post a[slot="title"]:has-text(/\b(?:lando|norris|mclaren)\b/i)))
+reddit.com##[id*="trending-searches"]
+reddit.com##article:has(shreddit-post[score="0"])
 reddit.com##shreddit-comment:has([icon-name="block"])
 reddit.com##shreddit-comment[collapsed]
-reddit.com##[id*="trending-searches"]
+reddit.com##shreddit-comment:has-text(/bottled|bottling/i)
+
 
 ! Twitter
 x.com##[aria-label="Timeline: Conversation"] [data-testid="cellInnerDiv"]:not(:first-child)
