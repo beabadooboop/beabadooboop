@@ -53,6 +53,7 @@ feederseries.net##.nav-links
 feederseries.net##.widget-area
 
 ! Reddit
+reddit.com##body:has(custom-feed-header[name="f1"]) article:not(:has(shreddit-post a[slot="title"]:has-text(/\b(?:lando|norris|mclaren)\b/i)))
 reddit.com##shreddit-comment:has([icon-name="block"])
 reddit.com##shreddit-comment[collapsed]
 reddit.com##[id*="trending-searches"]
@@ -80,4 +81,3 @@ tumblr.com##.FtjPK:not(:is(.k31gt,.KSDLH):has-text(/\b(?:lando|landito|ln|ln1|ln
 
 ! DM
 dailymail.com##div
-
