@@ -50,15 +50,13 @@ the-race.com##[class="gh-footer-signup"]
 feederseries.net##.wp-block-list
 feederseries.net##.wp-block-jetpack-donations.jp-donations-1
 feederseries.net##.nav-links
-feederseries.net##.widget-area
+feederseries.net##.widget-aarea
 
 ! Reddit
 reddit.com##[id*="trending-searches"]
 reddit.com##article:has(shreddit-post[score="0"])
 reddit.com##shreddit-comment:has([icon-name="block"])
 reddit.com##shreddit-comment[collapsed]
-reddit.com##shreddit-comment:has-text(/bottled|bottling/i)
-
 
 ! Twitter
 x.com##[aria-label="Timeline: Conversation"] [data-testid="cellInnerDiv"]:not(:first-child)
