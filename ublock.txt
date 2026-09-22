@@ -70,19 +70,14 @@ tumblr.com##[data-cell-id*="carousel"]
 tumblr.com##[data-cell-id*="timelineObject:title"]
 tumblr.com##[data-timeline-id*="peepr-more-posts"]
 tumblr.com##.J1Yq3:has([aria-label="Suggested communities"])
+tumblr.com##[aria-label="Post footer"]
 tumblr.com##[class="VNh6c"]
 tumblr.com##.njwip
 tumblr.com##.erLM8
 tumblr.com##.B5krg
 
-! Keyword Ublock Compatible
+! Keyword
 tumblr.com##.FtjPK:not(:is(.k31gt,.KSDLH):has-text(/\b(?:lando|landito|ln|ln1|ln4|lnfour|carlando|norrix|norrussell|norbon|jon|jontent)\b/i))
-
-! Tumblr
-landinrris.tumblr.com##aside
-landinrris.tumblr.com##body > [href*="espoirthemes"]
-landinrris.tumblr.com###maincontent
-landinrris.tumblr.com##[class*="iframe-controls"]
 
 ! DM
 dailymail.com##div
