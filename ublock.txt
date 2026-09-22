@@ -63,7 +63,6 @@ x.com##[aria-label="Timeline: Conversation"] [data-testid="cellInnerDiv"]:not(:f
 x.com##article:has-text(/(⁸¹|OP81)/i)
 
 ! Tumblr
-tumblr.com##.FtjPK:not(:has([aria-label="Image"]),:has([aria-label*="Video"]))
 tumblr.com##.FtjPK:has([class="W0ros"])
 tumblr.com##.FtjPK:has([data-attribution="poll-block"])
 tumblr.com##.FZkjV:has([class="hF8Wr"])
@@ -78,6 +77,12 @@ tumblr.com##.B5krg
 
 ! Keyword Ublock Compatible
 tumblr.com##.FtjPK:not(:is(.k31gt,.KSDLH):has-text(/\b(?:lando|landito|ln|ln1|ln4|lnfour|carlando|norrix|norrussell|norbon|jon|jontent)\b/i))
+
+! Tumblr
+landinrris.tumblr.com##aside
+landinrris.tumblr.com##body > [href*="espoirthemes"]
+landinrris.tumblr.com###maincontent
+landinrris.tumblr.com##[class*="iframe-controls"]
 
 ! DM
 dailymail.com##div
