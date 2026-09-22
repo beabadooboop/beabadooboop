@@ -62,11 +62,13 @@ reddit.com##shreddit-comment[collapsed]
 x.com##[aria-label="Timeline: Conversation"] [data-testid="cellInnerDiv"]:not(:first-child)
 x.com##article:has-text(/(⁸¹|OP81)/i)
 
-! Tumblr
+! Tumblr [Taylor]
 tumblr.com##aside
 tumblr.com##body > [href*="espoirthemes"]
 tumblr.com###maincontent
 tumblr.com##[class*="iframe-controls"]
+tumblr.com##div.posts.fic_rec
+tumblr.com##div.posts.f1_art
 
 ! DM
 dailymail.com##div
