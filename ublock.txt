@@ -62,13 +62,21 @@ reddit.com##shreddit-comment[collapsed]
 x.com##[aria-label="Timeline: Conversation"] [data-testid="cellInnerDiv"]:not(:first-child)
 x.com##article:has-text(/(⁸¹|OP81)/i)
 
-! Tumblr [Taylor]
-tumblr.com##aside
-tumblr.com##body > [href*="espoirthemes"]
-tumblr.com###maincontent
-tumblr.com##[class*="iframe-controls"]
-tumblr.com##div.posts.fic_rec
-tumblr.com##div.posts.f1_art
+! Tumblr
+tumblr.com##.FtjPK:has([class="W0ros"])
+tumblr.com##.FtjPK:has([data-attribution="poll-block"])
+tumblr.com##.FZkjV:has([class="hF8Wr"])
+tumblr.com##.J1Yq3:has([aria-label="Suggested communities"])
+tumblr.com##[data-cell-id*="carousel"]
+tumblr.com##[data-cell-id*="timelineObject:title"]
+tumblr.com##[data-timeline-id*="peepr-more-posts"]
+tumblr.com##[class="VNh6c"]
+tumblr.com##.njwip
+tumblr.com##.erLM8
+tumblr.com##.B5krg
+
+! Keyword Ublock Compatible
+tumblr.com##.FtjPK:not(:is(.k31gt,.KSDLH):has-text(/\b(?:lando|landito|ln|ln1|ln4|lnfour|carlando|norrix|norrussell|norbon|jon|jontent)\b/i))
 
 ! DM
 dailymail.com##div
