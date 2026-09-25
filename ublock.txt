@@ -52,33 +52,17 @@ feederseries.net##.wp-block-jetpack-donations.jp-donations-1
 feederseries.net##.nav-links
 feederseries.net##.widget-aarea
 
+! AOTY
+albumoftheyear.org##div.section.small:has(#commentsContainer)
+albumoftheyear.org##.hideAds
+
 ! Reddit
 reddit.com##[id*="trending-searches"]
 reddit.com##article:has(shreddit-post[score="0"])
 reddit.com##shreddit-comment:has([icon-name="block"])
 reddit.com##shreddit-comment[collapsed]
 
-! Twitter
-x.com##[aria-label="Timeline: Conversation"] [data-testid="cellInnerDiv"]:not(:first-child)
-x.com##article:has-text(/(⁸¹|OP81)/i)
-
-! Tumblr [Main]
-tumblr.com##.FtjPK:has([class="W0ros"])
-tumblr.com##.FtjPK:has([data-attribution="poll-block"])
-tumblr.com##.FZkjV:has([class="hF8Wr"])
-tumblr.com##.J1Yq3:has([aria-label="Suggested communities"])
-tumblr.com##[data-cell-id*="carousel"]
-tumblr.com##[data-cell-id*="timelineObject:title"]
-tumblr.com##[data-timeline-id*="peepr-more-posts"]
-tumblr.com##[class="VNh6c"]
-tumblr.com##.njwip
-tumblr.com##.erLM8
-tumblr.com##.B5krg
-
-! Tumblr Keyword
-tumblr.com##.FtjPK:not(:is(.k31gt,.KSDLH):has-text(/\b(?:lando|landito|ln|ln1|ln4|lnfour|carlando|norrix|norrussell|norbon|jon|jontent)\b/i))
-
-! Tumblr [Tay]
+! Tumblr
 tumblr.com##body:has(a[href*="espoirthemes"]) aside
 tumblr.com##body > [href*="espoirthemes"]
 tumblr.com###maincontent
@@ -88,4 +72,3 @@ tumblr.com##div.posts.f1_art
 
 ! DM
 dailymail.com##div
-
