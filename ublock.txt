@@ -87,6 +87,3 @@ tumblr.com##[class*="iframe-controls"]
 tumblr.com##div.posts.fic_rec
 tumblr.com##div.posts.f1_art
 
-! DM
-dailymail.com##div
-
