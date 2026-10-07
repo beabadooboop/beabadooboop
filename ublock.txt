@@ -63,7 +63,7 @@ reddit.com##article:has(shreddit-post[score="0"])
 reddit.com##shreddit-comment:has([icon-name="block"])
 reddit.com##shreddit-comment[collapsed]
 reddit.com##[id*="related"]
-! reddit.com##body:has(a:is([href="/r/formula1/submit/"],[href="/r/F1Discussions/submit/"],[href="/r/McLarenFormula1/submit/"],[href="/r/INDYCAR/submit/"]))
+reddit.com##body:has(a:is([href="/r/formula1/submit/"],[href="/r/F1Discussions/submit/"],[href="/r/McLarenFormula1/submit/"],[href="/r/INDYCAR/submit/"]))
 
 ! Tumblr
 tumblr.com##.FtjPK:has([class="W0ros"])
