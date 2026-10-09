@@ -69,14 +69,6 @@ reddit.com##body:has(a:is([href="/r/formula1/submit/"],[href="/r/F1Discussions/s
 tumblr.com##.FtjPK:has([class="W0ros"])
 tumblr.com##.FtjPK:has([data-attribution="poll-block"])
 tumblr.com##.FZkjV:has([class="hF8Wr"])
-tumblr.com##.J1Yq3:has([aria-label="Suggested communities"])
-tumblr.com##[data-cell-id*="carousel"]
-tumblr.com##[data-cell-id*="timelineObject"]
-tumblr.com##[data-timeline-id*="peepr-more-posts"]
-tumblr.com##[class="VNh6c"]
-tumblr.com##.njwip
-tumblr.com##.erLM8
-tumblr.com##.B5krg
 tumblr.com##[aria-label="Comment"]
 tumblr.com##[aria-label="Reblog"]
 tumblr.com##[aria-label="Like"]
@@ -84,10 +76,6 @@ tumblr.com##[aria-label="Share"]
 
 ! Keyword Ublock Compatible
 tumblr.com##.FtjPK:not(:is(.k31gt,.KSDLH):has-text(/\b(?:lando|landito|ln|ln1|ln4|lnfour|carlando|norrix|norrussell|norbon|jon|jontent)\b/i))
-
-! For You 
-x.com##[role="tablist"] > div:first-child:not(:has([href]))
-x.com##[aria-label="Manage timelines"]
 
 ! Explore Page
 x.com##[aria-label="Timeline: Explore"]
@@ -100,10 +88,6 @@ x.com##[aria-label*="Notifications"]
 x.com##[aria-label*="Messages"]
 x.com##[aria-label="Grok"]
 
-! Analytics + Quotes Button
-x.com##[data-testid="app-text-transition-container"]
-x.com##div:has(> a[href$="/quotes"]):has-text(View quotes)
-
 ! Replies & Keywords
 x.com##[aria-label="Timeline: Conversation"] [data-testid="cellInnerDiv"]:not(:first-child)
 x.com##article:has-text(/(account you blocked)/i)
@@ -111,4 +95,4 @@ x.com##article:has-text(/(⁴³|⁸¹|OP81|FC43)/i)
 x.com##article:has(img[alt="🇦🇷"])
 
 ! DM
-! dailymail.com##div
+dailymail.com##div
