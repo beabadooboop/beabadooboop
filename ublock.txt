@@ -52,10 +52,8 @@ feederseries.net##.wp-block-jetpack-donations.jp-donations-1
 feederseries.net##.nav-links
 feederseries.net##.widget-aarea
 
-! AOTY
-albumoftheyear.org##div.section.small:has(#commentsContainer)
-albumoftheyear.org##.adHeading
-albumoftheyear.org##.hideAds
+! English Garden
+theenglishgarden.co.uk###dotdigital-in-article
 
 ! Reddit
 reddit.com##[id*="trending-searches"]
