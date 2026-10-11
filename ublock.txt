@@ -55,6 +55,20 @@ feederseries.net##.widget-aarea
 ! English Garden
 theenglishgarden.co.uk###dotdigital-in-article
 
+! Country Living
+countryliving.com##[data-embed="watch-next"]
+countryliving.com##[data-embed="embed-gallery"]
+countryliving.com##[data-block="transporter"]
+countryliving.com##[data-node-id="57.0"]
+countryliving.com##[class*="footer"]
+
+! House & Garden
+houseandgarden.co.uk##[data-testid="ContentFooterBottom"]
+houseandgarden.co.uk##[data-testid="action-bar-wrapper"]
+houseandgarden.co.uk##[data-testid*="interlude"]
+houseandgarden.co.uk##[class*="footer"]
+houseandgarden.co.uk##[class*="disclaimer"]
+
 ! Reddit
 reddit.com##[id*="trending-searches"]
 reddit.com##article:has(shreddit-post[score="0"])
