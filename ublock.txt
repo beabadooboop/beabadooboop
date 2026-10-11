@@ -56,7 +56,7 @@ feederseries.net##.widget-aarea
 theenglishgarden.co.uk##[class*="product-grid"]
 theenglishgarden.co.uk##[class="mb-4"]
 theenglishgarden.co.uk##[id*="newsletter"]
-theenglishgarden.co.uk##[class*=dotdigital]
+theenglishgarden.co.uk##[id*="dotdigital"]
 ||r1.dotdigital-pages.com/p/804U-DK$subdocument
 
 ! Country Living
@@ -123,3 +123,4 @@ x.com##article:has(img[alt="🇦🇷"])
 
 ! Daily Mail
 dailymail.com##div
+
