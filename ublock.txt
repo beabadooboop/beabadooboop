@@ -68,6 +68,8 @@ houseandgarden.co.uk##[data-testid="action-bar-wrapper"]
 houseandgarden.co.uk##[data-testid*="interlude"]
 houseandgarden.co.uk##[class*="footer"]
 houseandgarden.co.uk##[class*="disclaimer"]
+houseandgarden.co.uk##[class*="ContentFooterWrapper"]
+houseandgarden.co.uk##[class*="ExternalLinkEmbedWrapper"]
 
 ! Reddit
 reddit.com##[id*="trending-searches"]
@@ -117,3 +119,4 @@ x.com##article:has(img[alt="🇦🇷"])
 
 ! Daily Mail
 dailymail.com##div
+
