@@ -119,5 +119,5 @@ x.com##article:has-text(/(⁴³|⁸¹|OP81|FC43)/i)
 x.com##article:has(img[alt="🇦🇷"])
 
 ! Daily Mail
-dailymail.com##div
+! dailymail.com##div
 
