@@ -80,27 +80,6 @@ reddit.com##shreddit-comment[collapsed]
 reddit.com##[id*="related"]
 reddit.com##body:has(a:is([href="/r/formula1/submit/"],[href="/r/F1Discussions/submit/"],[href="/r/McLarenFormula1/submit/"],[href="/r/INDYCAR/submit/"]))
 
-! Tumblr filtered Posts & Polls
-tumblr.com##.FtjPK:has([class="W0ros"])
-tumblr.com##.FtjPK:has([data-attribution="poll-block"])
-
-! Tumblr Sidebar
-tumblr.com##.FZkjV:has([class="hF8Wr"])
-
-! Tumblr Ads and Suggestions
-tumblr.com##[data-cell-id*="carousel"]
-tumblr.com##[data-cell-id*="timelineObject:title"]
-tumblr.com##.J1Yq3:has([aria-label="Suggested communities"])
-
-! Tumblr Post Footer
-tumblr.com##[aria-label="Comment"]
-tumblr.com##[aria-label="Reblog"]
-tumblr.com##[aria-label="Like"]
-tumblr.com##[aria-label="Share"]
-
-! Tumblr Keyword [Ublock]
-tumblr.com##.FtjPK:not(:is(.k31gt,.KSDLH):has-text(/\b(?:lando|landito|ln|ln1|ln4|lnfour|carlando|norrix|norrussell|norbon|jon|jontent)\b/i))
-
 ! Twitter Explore Page
 x.com##[aria-label="Timeline: Explore"]
 
@@ -118,6 +97,8 @@ x.com##article:has-text(/(account you blocked)/i)
 x.com##article:has-text(/(⁴³|⁸¹|OP81|FC43)/i)
 x.com##article:has(img[alt="🇦🇷"])
 
-! Daily Mail
-! dailymail.com##div
+
+
+dailymail.com##div
+tumblr.com##div
 
