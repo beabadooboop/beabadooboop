@@ -110,6 +110,9 @@ tumblr.com##[aria-label="Reblog"]
 tumblr.com##[aria-label="Like"]
 tumblr.com##[aria-label="Share"]
 
+! Tumblr Media Only
+tumblr.com##.FtjPK:not(:has([aria-label="Image"]),:has([aria-label*="Video"]))
+
 ! Tumblr Keyword
 tumblr.com##.FtjPK:not(:is(.k31gt,.KSDLH):has-text(/\b(?:lando|landito|ln4|lnfour|norris|landonorris|carlando|norrix|norrussell|norbon|jontent)\b/i))
 
@@ -132,4 +135,3 @@ x.com##article:has(img[alt="🇦🇷"])
 
 ! Block
 dailymail.com##div
-
