@@ -134,4 +134,4 @@ x.com##article:has-text(/(⁴³|⁸¹|OP81|FC43)/i)
 x.com##article:has(img[alt="🇦🇷"])
 
 ! Block
-dailymail.com##div
+! dailymail.com##div
