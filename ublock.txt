@@ -80,52 +80,13 @@ reddit.com##shreddit-comment[collapsed]
 reddit.com##[id*="related"]
 reddit.com##body:has(a:is([href="/r/formula1/submit/"],[href="/r/F1Discussions/submit/"],[href="/r/McLarenFormula1/submit/"],[href="/r/INDYCAR/submit/"]))
 
-! Tumblr Blog-Specific
-tumblr.com##body:has(a[href*="espoirthemes"]) aside
-tumblr.com##body > [href*="espoirthemes"]
-tumblr.com###maincontent
-tumblr.com##[class*="iframe-controls"]
-tumblr.com##div.posts.fic_rec
-tumblr.com##div.posts.f1_art
-
-! Tumblr Post Pages
-tumblr.com##[data-timeline-id*="peepr-more-posts"]
-tumblr.com##[class="VNh6c"]
-
-! Tumblr filtered Posts & Polls
-tumblr.com##.FtjPK:has([class="W0ros"])
-tumblr.com##.FtjPK:has([data-attribution="poll-block"])
-
-! Tumblr Sidebar
-tumblr.com##.FZkjV:has([class="hF8Wr"])
-
-! Tumblr Ads and Suggestions
-tumblr.com##[data-cell-id*="carousel"]
-tumblr.com##[data-cell-id*="timelineObject:title"]
-tumblr.com##.J1Yq3:has([aria-label="Suggested communities"])
-
-! Tumblr Post Footer
-tumblr.com##[aria-label="Comment"]
-tumblr.com##[aria-label="Reblog"]
-tumblr.com##[aria-label="Like"]
-tumblr.com##[aria-label="Share"]
-
-! Tumblr Media Only
-tumblr.com##.FtjPK:not(:has([aria-label="Image"]),:has([aria-label*="Video"]))
-
-! Tumblr Keyword
-tumblr.com##.FtjPK:not(:is(.k31gt,.KSDLH):has-text(/\b(?:lando|landito|ln4|lnfour|norris|landonorris|carlando|norrix|norrussell|norbon|jontent)\b/i))
-
 ! Twitter Explore Page
 x.com##[aria-label="Timeline: Explore"]
-
-! Twitter Grok
-x.com##[aria-label*="Grok"]
 
 ! Twitter Navigation Bar
 x.com##[aria-label*="Notifications"]
 x.com##[aria-label*="Messages"]
-x.com##[aria-label="Grok"]
+x.com##[aria-label*="Grok"]
 
 ! Twitter Replies & Keywords
 x.com##[aria-label="Timeline: Conversation"] [data-testid="cellInnerDiv"]:not(:first-child)
@@ -133,5 +94,13 @@ x.com##article:has-text(/(account you blocked)/i)
 x.com##article:has-text(/(⁴³|⁸¹|OP81|FC43)/i)
 x.com##article:has(img[alt="🇦🇷"])
 
-! Block
-! dailymail.com##div
+! DM
+dailymail.com##div
+tumblr.com##div
+
+! Sky
+news.sky.com##[data-testid*="watch-next"]
+news.sky.com##[data-testid*="more-video"]
+news.sky.com##[class="ui-trust-project"]
+news.sky.com##[class*="related"]
+news.sky.com##p:has(> strong:has-text(More from Sky News))
