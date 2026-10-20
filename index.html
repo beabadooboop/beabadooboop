@@ -33,6 +33,7 @@
     body {
       min-height: 100vh;
       min-height: 100svh;
+
       padding:
         max(14px, env(safe-area-inset-top))
         16px
@@ -43,7 +44,7 @@
       gap: 18px;
     }
 
-    /* Square image banner */
+    /* Square banner image */
     .banner {
       width: 100%;
       aspect-ratio: 1 / 1;
@@ -65,7 +66,7 @@
       display: block;
     }
 
-    /* Optional dark overlay and title */
+    /* Banner title */
     .banner::after {
       content: "*";
       position: absolute;
@@ -79,16 +80,16 @@
       pointer-events: none;
     }
 
-    /* Flexible space keeps bookmarks at the bottom */
+    /* Flexible space between banner and bookmarks */
     .spacer {
       flex: 1 0 12px;
     }
 
-    /* Two rows of four bookmarks */
+    /* One row of five bookmarks */
     .bookmarks {
       display: grid;
-      grid-template-columns: repeat(4, minmax(0, 1fr));
-      gap: 16px 10px;
+      grid-template-columns: repeat(5, minmax(0, 1fr));
+      gap: 12px 8px;
       width: 100%;
       margin-top: auto;
     }
@@ -104,20 +105,21 @@
       -webkit-tap-highlight-color: transparent;
     }
 
+    /* Bookmark icons */
     .bookmark-icon {
-      width: min(17vw, 64px);
-      height: min(17vw, 64px);
-      min-width: 46px;
-      min-height: 46px;
+      width: min(14vw, 58px);
+      height: min(14vw, 58px);
+      min-width: 0;
+      min-height: 0;
 
       display: grid;
       place-items: center;
 
-      border-radius: 16px;
+      border-radius: 14px;
       background: var(--tile);
       border: 1px solid var(--tile-border);
 
-      font-size: 24px;
+      font-size: 23px;
       font-weight: 700;
       overflow: hidden;
 
@@ -128,6 +130,7 @@
       transform: scale(0.94);
     }
 
+    /* Optional custom bookmark images */
     .bookmark-icon img {
       width: 100%;
       height: 100%;
@@ -135,13 +138,14 @@
       display: block;
     }
 
+    /* Bookmark labels */
     .bookmark-label {
       width: 100%;
       overflow: hidden;
       text-overflow: ellipsis;
       white-space: nowrap;
       text-align: center;
-      font-size: 11px;
+      font-size: 10px;
       color: var(--muted);
     }
 
@@ -153,8 +157,8 @@
       }
 
       .bookmark-icon {
-        width: 62px;
-        height: 62px;
+        width: 58px;
+        height: 58px;
       }
     }
 
@@ -172,56 +176,62 @@
 
   <!-- Upload banner.jpg to the same GitHub repository -->
   <header class="banner">
-    <img src="banner.png" alt="Banner"
-         onerror="this.style.display='none'">
+    <img
+      src="banner.png"
+      alt="Banner"
+      onerror="this.style.display='none'"
+    >
   </header>
 
   <div class="spacer" aria-hidden="true"></div>
 
-  <!-- Website bookmarks -->
+  <!-- Five bookmarks -->
   <nav class="bookmarks" aria-label="Website bookmarks">
 
-    <a class="bookmark" href="https://www.nytimes.com/games/wordle/index.html">
-  <span class="bookmark-icon"
-        style="background:#6aaa64;color:#ffffff;font-weight:800;">W</span>
-  <span class="bookmark-label">Wordle</span>
-</a>
-
-    <a class="bookmark" href="https://raceday.watch/#sessions">
-  <span class="bookmark-icon"
-        style="background:#4a1116;border-color:#702027;">🏁</span>
-  <span class="bookmark-label">Motorsport</span>
-</a>
-
-    <a class="bookmark" href="https://www.reddit.com">
-      <span class="bookmark-icon">r</span>
-      <span class="bookmark-label">Reddit</span>
-    </a>
-
-    <a class="bookmark" href="https://www.wikipedia.org">
-      <span class="bookmark-icon">W</span>
-      <span class="bookmark-label">Wikipedia</span>
-    </a>
-
-    <a class="bookmark" href="https://www.bbc.co.uk/weather/bs24">
+    <!-- Weather -->
+    <a class="bookmark" href="https://weather.google.com/">
       <span class="bookmark-icon">🌤️</span>
       <span class="bookmark-label">Weather</span>
     </a>
 
+    <!-- News -->
     <a class="bookmark" href="https://www.bbc.co.uk/news">
       <span class="bookmark-icon">📰</span>
       <span class="bookmark-label">News</span>
     </a>
 
-<a class="bookmark" href="https://www.tumblr.com/">
-  <span class="bookmark-icon"
-        style="background:#35465c;color:#ffffff;font-family:Georgia,serif;font-size:36px;font-weight:bold;">t</span>
-  <span class="bookmark-label">Tumblr</span>
-</a>
+    <!-- Tumblr -->
+    <a class="bookmark" href="https://www.tumblr.com/">
+      <span
+        class="bookmark-icon"
+        style="background:#35465c; border-color:#465a70;
+               font-family:Georgia,serif; font-size:36px;">
+        t
+      </span>
+      <span class="bookmark-label">Tumblr</span>
+    </a>
 
-    <a class="bookmark" href="https://www.amazon.co.uk">
-      <span class="bookmark-icon">a</span>
-      <span class="bookmark-label">Amazon</span>
+    <!-- Wordle -->
+    <a
+      class="bookmark"
+      href="https://www.nytimes.com/games/wordle/index.html"
+    >
+      <span
+        class="bookmark-icon"
+        style="background:#6aaa64; border-color:#6aaa64;">
+        W
+      </span>
+      <span class="bookmark-label">Wordle</span>
+    </a>
+
+    <!-- Motorsport -->
+    <a class="bookmark" href="https://raceday.watch/#sessions">
+      <span
+        class="bookmark-icon"
+        style="background:#4a1116; border-color:#702027;">
+        🏁
+      </span>
+      <span class="bookmark-label">Racing</span>
     </a>
 
   </nav>
