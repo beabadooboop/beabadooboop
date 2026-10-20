@@ -1,38 +1,227 @@
-<!doctype html>
+
+<!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta name="theme-color" content="#000000">
-<title>My Start Page</title>
-<style>
-*{box-sizing:border-box}
-html,body{margin:0;min-height:100%;background:#000;color:#fff;font-family:system-ui,-apple-system,sans-serif}
-body{min-height:100svh;padding:max(14px,env(safe-area-inset-top)) 16px max(18px,env(safe-area-inset-bottom));display:flex;flex-direction:column;gap:18px}
-.banner{width:100%;aspect-ratio:16/7;min-height:130px;max-height:250px;border-radius:16px;overflow:hidden;position:relative;background:linear-gradient(135deg,#303030,#101010);border:1px solid #292929;flex:none}
-.banner img{width:100%;height:100%;position:absolute;inset:0;object-fit:cover}
-.banner:after{content:"START";position:absolute;left:18px;bottom:14px;font-size:clamp(1.2rem,5vw,2rem);font-weight:800;letter-spacing:.22em;text-shadow:0 2px 12px #000}
-.spacer{flex:1;min-height:24px}
-.bookmarks{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px 10px;margin-top:auto}
-.bookmark{min-width:0;display:flex;flex-direction:column;align-items:center;gap:7px;color:#fff;text-decoration:none}
-.icon{width:min(17vw,66px);height:min(17vw,66px);min-width:48px;min-height:48px;border-radius:16px;display:grid;place-items:center;background:#171717;border:1px solid #292929;font-size:24px;font-weight:700}
-.label{width:100%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;text-align:center;font-size:11px;color:#b8b8b8}
-@media(min-width:600px){body{max-width:520px;margin:auto}.icon{width:62px;height:62px}}
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#000000">
+  <title>My Start Page</title>
+
+  <style>
+    :root {
+      --background: #000000;
+      --tile: #171717;
+      --tile-border: #292929;
+      --text: #ffffff;
+      --muted: #aaaaaa;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html,
+    body {
+      margin: 0;
+      min-height: 100%;
+      background: var(--background);
+      color: var(--text);
+      font-family: system-ui, -apple-system, BlinkMacSystemFont,
+        "Segoe UI", sans-serif;
+    }
+
+    body {
+      min-height: 100vh;
+      min-height: 100svh;
+      padding:
+        max(14px, env(safe-area-inset-top))
+        16px
+        max(18px, env(safe-area-inset-bottom));
+
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+    }
+
+    /* Square image banner */
+    .banner {
+      width: 100%;
+      aspect-ratio: 1 / 1;
+      border-radius: 16px;
+      overflow: hidden;
+      position: relative;
+      background: #111111;
+      border: 1px solid #292929;
+      flex: 0 0 auto;
+    }
+
+    .banner img {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      inset: 0;
+      object-fit: cover;
+      object-position: center;
+      display: block;
+    }
+
+    /* Optional dark overlay and title */
+    .banner::after {
+      content: "START";
+      position: absolute;
+      left: 18px;
+      bottom: 16px;
+      color: #ffffff;
+      font-size: clamp(1.4rem, 6vw, 2rem);
+      font-weight: 800;
+      letter-spacing: 0.22em;
+      text-shadow: 0 2px 12px #000000;
+      pointer-events: none;
+    }
+
+    /* Flexible space keeps bookmarks at the bottom */
+    .spacer {
+      flex: 1 0 12px;
+    }
+
+    /* Two rows of four bookmarks */
+    .bookmarks {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 16px 10px;
+      width: 100%;
+      margin-top: auto;
+    }
+
+    .bookmark {
+      min-width: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 7px;
+      color: var(--text);
+      text-decoration: none;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    .bookmark-icon {
+      width: min(17vw, 64px);
+      height: min(17vw, 64px);
+      min-width: 46px;
+      min-height: 46px;
+
+      display: grid;
+      place-items: center;
+
+      border-radius: 16px;
+      background: var(--tile);
+      border: 1px solid var(--tile-border);
+
+      font-size: 24px;
+      font-weight: 700;
+      overflow: hidden;
+
+      transition: transform 0.12s ease;
+    }
+
+    .bookmark:active .bookmark-icon {
+      transform: scale(0.94);
+    }
+
+    .bookmark-icon img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .bookmark-label {
+      width: 100%;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      text-align: center;
+      font-size: 11px;
+      color: var(--muted);
+    }
+
+    /* Wider screens */
+    @media (min-width: 600px) {
+      body {
+        max-width: 520px;
+        margin: 0 auto;
+      }
+
+      .bookmark-icon {
+        width: 62px;
+        height: 62px;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *,
+      *::before,
+      *::after {
+        transition: none !important;
+      }
+    }
+  </style>
 </head>
+
 <body>
-<!-- Put an image named banner.jpg beside this file, or change the filename below. -->
-<header class="banner"><img src="banner.jpg" alt="" onerror="this.style.display='none'"></header>
-<div class="spacer"></div>
-<nav class="bookmarks" aria-label="Website bookmarks">
-<a class="bookmark" href="https://www.nytimes.com/games/wordle/index.html"><span class="icon">W</span><span class="label">Wordle</span></a>
-<a class="bookmark" href="https://https://raceday.watch/#sessions"><span class="icon">R</span><span class="label">RDW</span></a>
-<a class="bookmark" href="https://www.reddit.com"><span class="icon">r</span><span class="label">Reddit</span></a>
-<a class="bookmark" href="https://www.wikipedia.org"><span class="icon">W</span><span class="label">Wikipedia</span></a>
-<a class="bookmark" href="https://mail.google.com"><span class="icon">✉</span><span class="label">Gmail</span></a>
-<a class="bookmark" href="https://www.instagram.com"><span class="icon">◎</span><span class="label">Instagram</span></a>
-<a class="bookmark" href="https://www.bbc.co.uk/news"><span class="icon">BBC</span><span class="label">BBC News</span></a>
-<a class="bookmark" href="https://www.amazon.co.uk"><span class="icon">a</span><span class="label">Amazon</span></a>
-</nav>
+
+  <!-- Upload banner.jpg to the same GitHub repository -->
+  <header class="banner">
+    <img src="banner.jpg" alt="Banner"
+         onerror="this.style.display='none'">
+  </header>
+
+  <div class="spacer" aria-hidden="true"></div>
+
+  <!-- Website bookmarks -->
+  <nav class="bookmarks" aria-label="Website bookmarks">
+
+    <a class="bookmark" href="https://www.google.com">
+      <span class="bookmark-icon">G</span>
+      <span class="bookmark-label">Google</span>
+    </a>
+
+    <a class="bookmark" href="https://www.youtube.com">
+      <span class="bookmark-icon">▶</span>
+      <span class="bookmark-label">YouTube</span>
+    </a>
+
+    <a class="bookmark" href="https://www.reddit.com">
+      <span class="bookmark-icon">r</span>
+      <span class="bookmark-label">Reddit</span>
+    </a>
+
+    <a class="bookmark" href="https://www.wikipedia.org">
+      <span class="bookmark-icon">W</span>
+      <span class="bookmark-label">Wikipedia</span>
+    </a>
+
+    <a class="bookmark" href="https://mail.google.com">
+      <span class="bookmark-icon">✉</span>
+      <span class="bookmark-label">Gmail</span>
+    </a>
+
+    <a class="bookmark" href="https://www.instagram.com">
+      <span class="bookmark-icon">◎</span>
+      <span class="bookmark-label">Instagram</span>
+    </a>
+
+    <a class="bookmark" href="https://www.bbc.co.uk/news">
+      <span class="bookmark-icon">BBC</span>
+      <span class="bookmark-label">BBC News</span>
+    </a>
+
+    <a class="bookmark" href="https://www.amazon.co.uk">
+      <span class="bookmark-icon">a</span>
+      <span class="bookmark-label">Amazon</span>
+    </a>
+
+  </nav>
+
 </body>
 </html>
