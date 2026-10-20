@@ -37,7 +37,7 @@
       padding:
         max(14px, env(safe-area-inset-top))
         16px
-        max(18px, env(safe-area-inset-bottom));
+        max(32px, calc(env(safe-area-inset-bottom) + 14px));
 
       display: flex;
       flex-direction: column;
@@ -107,8 +107,8 @@
 
     /* Bookmark icons */
     .bookmark-icon {
-      width: min(14vw, 58px);
-      height: min(14vw, 58px);
+      width: min(14vw, 50px);
+      height: min(14vw, 50px);
       min-width: 0;
       min-height: 0;
 
