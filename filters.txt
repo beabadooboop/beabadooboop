@@ -101,3 +101,7 @@ tumblr.com##[aria-label="Comment"]
 tumblr.com##[aria-label="Reblog"]
 tumblr.com##[aria-label="Like"]
 tumblr.com##[aria-label="Share"]
+
+! Insta
+instagram.com##span[aria-label*="Notification"]
+instagram.com##a[href*="/notifications/"] > div > div
