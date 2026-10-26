@@ -104,3 +104,4 @@ tumblr.com##[aria-label="Share"]
 
 ! Insta
 instagram.com##a[href*="/notifications/"] > div > div
+instagram.com##._ab1b._at34._ab18
