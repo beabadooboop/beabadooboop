@@ -105,3 +105,4 @@ tumblr.com##[aria-label="Share"]
 ! Insta
 instagram.com##span[aria-label*="Notification"]
 instagram.com##a[href*="/notifications/"] > div > div
+instagram.com##svg[aria-label*="Create"]:upward(a)
