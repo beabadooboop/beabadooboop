@@ -46,12 +46,6 @@ the-race.com##[class*="ad-spot"]
 the-race.com##[class*="latest-stories"]
 the-race.com##[class="gh-footer-signup"]
 
-! Feeders
-feederseries.net##.wp-block-list
-feederseries.net##.wp-block-jetpack-donations.jp-donations-1
-feederseries.net##.nav-links
-feederseries.net##.widget-aarea
-
 ! Country Living
 countryliving.com##[data-embed="watch-next"]
 countryliving.com##[data-embed="embed-gallery"]
@@ -79,28 +73,6 @@ reddit.com##shreddit-comment:has([icon-name="block"])
 reddit.com##shreddit-comment[collapsed]
 reddit.com##[id*="related"]
 reddit.com##body:has(a:is([href="/r/formula1/submit/"],[href="/r/F1Discussions/submit/"],[href="/r/McLarenFormula1/submit/"],[href="/r/INDYCAR/submit/"]))
-
-! Tumblr Post Pages
-tumblr.com##[data-timeline-id*="peepr-more-posts"]
-tumblr.com##[class="VNh6c"]
-
-! Tumblr filtered Posts & Polls
-tumblr.com##.FtjPK:has([class="W0ros"])
-tumblr.com##.FtjPK:has([data-attribution="poll-block"])
-
-! Tumblr Sidebar
-tumblr.com##.FZkjV:has([class="hF8Wr"])
-
-! Tumblr Ads and Suggestions
-tumblr.com##[data-cell-id*="carousel"]
-tumblr.com##[data-cell-id*="timelineObject:title"]
-tumblr.com##.So6RQ.YSitt:has(a[href*="smartadserver"])
-
-! Tumblr Post Footer
-tumblr.com##[aria-label="Comment"]
-tumblr.com##[aria-label="Reblog"]
-tumblr.com##[aria-label="Like"]
-tumblr.com##[aria-label="Share"]
 
 ! Insta
 instagram.com##a[href*="/notifications/"] > div > div
