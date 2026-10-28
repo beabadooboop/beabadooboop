@@ -74,10 +74,6 @@ reddit.com##shreddit-comment[collapsed]
 reddit.com##[id*="related"]
 reddit.com##body:has(a:is([href="/r/formula1/submit/"],[href="/r/F1Discussions/submit/"],[href="/r/McLarenFormula1/submit/"],[href="/r/INDYCAR/submit/"]))
 
-! Insta
-instagram.com##a[href*="/notifications/"] > div > div
-instagram.com##._ab1b._at34._ab18
-
 ! Twitter Replies & Keywords
 x.com##[aria-label="Timeline: Conversation"] [data-testid="cellInnerDiv"]:not(:first-child)
 x.com##article:has-text(/(account you blocked)/i)
