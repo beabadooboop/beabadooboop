@@ -108,5 +108,5 @@ tumblr.com##[aria-label="Reblog"]
 tumblr.com##[aria-label="Like"]
 tumblr.com##[aria-label="Share"]
 
-! Keyword Ublock Compatible
-tumblr.com##.FtjPK:not(:is(.k31gt,.KSDLH):has-text(/\b(?:lando|landito|ln|ln1|ln4|lnfour|carlando|norrix|norrussell|norbon|jon|jontent)\b/i))
+! Keyword Brave Compatible
+tumblr.com##article:not(:has([data-testid="tag-link"][href*="lando"], [data-testid="tag-link"][href*="norrix"]))
