@@ -104,5 +104,5 @@ tumblr.com##[aria-label="Like"]
 tumblr.com##[aria-label="Share"]
 
 ! Keyword Adguard
-tumblr.com##article:not(:has([data-testid="tag-link"][href*="lando"], [data-testid="tag-link"][href*="norrix"]))
+tumblr.com##.FtjPK:not(:has(.k31gt:has-text(/\b(?:lando|landito|ln|ln1|ln4|lnfour|carlando|norrix|norrussell|norbon|jon|jontent)\b/i))):not(:has(.KSDLH:has-text(/\b(?:lando|landito|ln|ln1|ln4|lnfour|carlando|norrix|norrussell|norbon|jon|jontent)\b/i)))
 
