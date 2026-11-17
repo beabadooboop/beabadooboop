@@ -1,3 +1,6 @@
+! Autosport
+autosport.com,motorsport.com##[class*="comment"], [class*="live-timing"], [class*="drivers-rating"], [class*="inarticle-widgets"], [class*="prev-next"], [class*="related"], [class*="video"], [class*="footer"], [class*="ms-hapb"], [class*="ms-apb"], [data-msnt-label="Advertisement"], [data-widget*="recommendations"], [class*="embed-item"]
+
 ! Racer
 racer.com##[class*="mui-23a8w5"], [class*="mui-pozj21"], [class*="mui-31ay2x"], [class*="mui-1use7mj"], [class*="mui-s8w5if"], [class*="mui-3a49va"], [class*="mui-r9be5k"], [class*="mui-utg45p"], [class*="mui-bvqshl"], [class*="mui-84xbvh"], [class*="mui-b53am9"], [class*="mui-1by5bs2"], [class*="mui-1upilqn"], [class*="mui-yn35v5"], [class*="mui-qbdd6d"], [class*="mui-htoeji"]
 
