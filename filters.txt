@@ -11,3 +11,10 @@ theguardian.com##[aria-label="Highlights"]
 theguardian.com##[data-component="topbar"]
 
 dailymail.*##div
+
+tumblr.com##[data-cell-id*="carousel"], [data-cell-id*="timelineObject:title"]
+tumblr.com##.So6RQ.YSitt:has(a[href*="smartadserver"])
+tumblr.com##.J1Yq3:has([aria-label="Suggested communities"])
+tumblr.com##.FZkjV:has([class="hF8Wr"])
+tumblr.com##.FtjPK:has([class="W0ros"], [data-attribution="poll-block"])
+tumblr.com##.FtjPK:not(:is(.k31gt,.KSDLH):has-text(/\b(?:lando|landito|ln|ln1|ln4|lnfour|carlando|norrix|norrussell|norbon|jon|jontent)\b/i))
